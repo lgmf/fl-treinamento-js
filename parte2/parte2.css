@@ -1,8 +1,3 @@
-.container {
-    display: flex;
-    justify-content: center;
-}
-
 .box {
     background-color: red;                
     flex: 1;
