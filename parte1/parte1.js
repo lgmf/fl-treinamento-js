@@ -72,10 +72,8 @@
 
 // const x = true
 // const y = false
-
 //OU
-
-// // const [x, y] = [true, false]
+// const [x, y] = [true, false]
 
 // console.log({ x, y })
 
@@ -118,7 +116,7 @@
 //     return a / b;
 // }
 
-//OU
+// //OU
 
 // let div = (a, b) => (b === 0) ? 'ERRO --> Parâmetro "b" não pode ser zero' :  a / b 
 
@@ -151,9 +149,7 @@
 //     event.target.innerText = 'Clicado!'
 // }
 // myH4.addEventListener('click', handlerClick)
-
 //OU
-
 // myH4.addEventListener('click', (event) => {
 //     // debugger
 //     event.target.style.backgroundColor = 'blue';
@@ -194,6 +190,8 @@
 // console.log(myParagraphs)
 
 // let arr = Array.from(myParagraphs)
+//OU
+// let arr = [...myParagraphs]
 // console.log(arr)
 
 // myParagraphs
@@ -207,3 +205,30 @@
 //         p.addEventListener('mouseenter', (event) => event.srcElement.style.backgroundColor = 'yellow')
 //         p.addEventListener('mouseleave', (event) => event.srcElement.style.backgroundColor = 'white')
 //     })
+
+//---------------------------------------------------------------------------------------------------//
+//Spread Operator
+
+// let arr = [1,2,3,4,5]
+// let arr1 = [6,7,8] 
+// arr.push(arr1)
+// arr.push(...arr1)
+// console.log(arr)
+
+//Bug com nested objects
+// let obj = {
+//     name: 'Luiz',
+//     type: {
+//         name: 'obj',
+//         color: 'red'
+//     }
+// }
+
+// console.log({ obj })
+
+// let objAux = {
+//     ...obj
+// }
+
+// console.log({ objAux })
+
