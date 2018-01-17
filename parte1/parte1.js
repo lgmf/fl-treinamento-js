@@ -3,7 +3,7 @@
 // for (var i = 0; i < 5; i++) { /* do something */ }
 // for (let j = 0; j < 5; j++) { /* do something else */}
 
-// console.log(i); // 5
+// console.log(i+1); // 5
 // console.log(j); // Uncaught ReferenceError: j is not defined
 
 
@@ -16,13 +16,11 @@
 // const b = 1
 // b = 2 // Uncaught SyntaxError "b" is read-only
 
-
 //---------------------------------------------------------------------------------------------------//
 //Importância dos 3 iguais
 
-// console.log({ doubleEqual: 1 == '1'}) // true
-// console.log({ tripleEqual: 1 === '1'})  // false
-
+// console.log({ doubleEqual: 1 != '1'}) // true
+// console.log({ tripleEqual: 1 !== '1'})  // false
 
 //---------------------------------------------------------------------------------------------------//
 //Métodos da classe String
@@ -72,16 +70,16 @@
 
 // const x = true
 // const y = false
-//OU
+// OU
 // const [x, y] = [true, false]
 
 // console.log({ x, y })
 
 // let myObj = null
-// console.log((myObj) ? 'Esse objeto NÃO é nulo' : 'Esse objeto é nulo') // NULO
+// console.log( (myObj) ? 'Esse objeto NÃO é nulo' : 'Esse objeto é nulo') // NULO
 
 // myObj = undefined
-// console.log((myObj) ? 'Esse objeto NÃO é nulo' : 'Esse objeto é nulo') // NULO
+// console.log( (myObj) ? 'Esse objeto NÃO é nulo' : 'Esse objeto é nulo') // NULO
 
 // myObj = { name: 'Luiz Guilherme ', lastName: 'Mendes Ferrari' }
 // console.log((myObj) ? 'Esse objeto NÃO é nulo' : 'Esse objeto é nulo') // NÃO NULO
@@ -112,8 +110,8 @@
 //Funções
 
 // function div(a, b) {
-//     if (b === 0) return 'ERRO --> Parâmetro "b" não pode ser zero'//     
-//     return a / b;
+//     if (b === 0) return 'ERRO --> Parâmetro "b" não pode ser zero'//         
+//     return a / b
 // }
 
 // //OU
@@ -142,7 +140,8 @@
 // myH4.style.padding = '0.5em 0.5em'
 
 // function handlerClick(event) {
-//     //debugger
+//     // debugger
+
 //     if (event.target.style.backgroundColor === 'blue') {
 //         event.target.style.backgroundColor = 'white'
 //         event.target.style.color = 'black'
@@ -154,6 +153,7 @@
 //     event.target.style.color = 'white'
 //     event.target.innerText = 'Clicado!'
 // }
+
 // myH4.addEventListener('click', handlerClick)
 //OU
 // myH4.addEventListener('click', (event) => {
@@ -192,12 +192,13 @@
 
 //OBS.: Descomentar os 'p' no HTML
 
-// let myParagraphs = document.querySelectorAll('p')
+let myParagraphs = document.querySelectorAll('p')
 // console.log(myParagraphs)
 
-// let arr = Array.from(myParagraphs)
+let arr = Array.from(myParagraphs)
 //OU
-// let arr = [...myParagraphs]
+//let arr = [...myParagraphs]
+
 // console.log(arr)
 
 // myParagraphs
@@ -222,19 +223,24 @@
 // console.log(arr)
 
 //Bug com nested objects
-// let obj = {
-//     name: 'Luiz',
-//     type: {
-//         name: 'obj',
-//         color: 'red'
-//     }
-// }
+let obj = {
+    name: 'Luiz',
+    type: {
+        name: 'obj',
+        color: 'red'
+    }
+}
 
-// console.log({ obj })
+console.log({ obj })
 
-// let objAux = {
-//     ...obj
-// }
+let objAux = {
+    ...obj
+}
+//OU
+//let objAux = Object.assign({},obj)
 
-// console.log({ objAux })
+console.log({ objAux })
 
+function myFunction(str){
+    alert(str);
+}
