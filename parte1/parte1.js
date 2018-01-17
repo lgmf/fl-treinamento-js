@@ -192,10 +192,10 @@
 
 //OBS.: Descomentar os 'p' no HTML
 
-let myParagraphs = document.querySelectorAll('p')
+// let myParagraphs = document.querySelectorAll('p')
 // console.log(myParagraphs)
 
-let arr = Array.from(myParagraphs)
+// let arr = Array.from(myParagraphs)
 //OU
 //let arr = [...myParagraphs]
 
@@ -223,24 +223,24 @@ let arr = Array.from(myParagraphs)
 // console.log(arr)
 
 //Bug com nested objects
-let obj = {
-    name: 'Luiz',
-    type: {
-        name: 'obj',
-        color: 'red'
-    }
-}
+// let obj = {
+//     name: 'Luiz',
+//     type: {
+//         name: 'obj',
+//         color: 'red'
+//     }
+// }
 
-console.log({ obj })
+// console.log({ obj })
 
-let objAux = {
-    ...obj
-}
-//OU
-//let objAux = Object.assign({},obj)
+// let objAux = {
+//     ...obj
+// }
+// //OU
+// //let objAux = Object.assign({},obj)
 
-console.log({ objAux })
+// console.log({ objAux })
 
-function myFunction(str){
-    alert(str);
-}
+// function myFunction(str){
+//     alert(str);
+// }
