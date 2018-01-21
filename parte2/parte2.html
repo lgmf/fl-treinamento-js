@@ -4,18 +4,51 @@
 
     <head>
         <title>JS - Parte 2</title>
-        <link rel="stylesheet" type="text/css" href="assets/layout.css">
         <link rel="stylesheet" type="text/css" href="parte2.css">
     </head>
 
     <body>
         <h1>Treinamento JavaScript - Parte 2</h1>
+
         <div class="container">
             <div class="box" data-change-color="true">Esse vai mudar</div>
             <div class="box" data-change-color="false">Esse não</div>
+
+            <hr>
+
+            <h5>Parágrafos com fuction</h5>
+            <div class="paragraphs">
+                <p>paragráfo 1</p>
+                <p>paragráfo 2</p>
+                <p>paragráfo 3</p>
+            </div>
+
+            <h5>Parágrafos com arrow function</h5>
+            <div class="paragraphs-arrow">
+                <p>paragráfo 1</p>
+                <p>paragráfo 2</p>
+                <p>paragráfo 3</p>
+            </div>
+
+            <hr>
+
+            <button><h1>Clique aqui!</h1></button>
+            <input type="text" placeholder="Digite aqui...">
+
+            <hr>
+
+            <div class="container">
+                <h4>Meus contatos:</h4>
+                <div class="circular-spinner">
+                    <img src="../assets/load-mask-blue.gif" />
+                </div>
+                <ul class="data-list" data-list="contacts"></ul>
+            </div>
+
         </div>
 
 
+        <!-- A ordem de importação dos scripts importa! -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="parte2.js"></script>
     </body>
