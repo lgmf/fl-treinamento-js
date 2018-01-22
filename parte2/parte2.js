@@ -57,7 +57,7 @@ $(document).ready(() => {
 
     $('button').click(handleEvent);
 
-    $('input[type="text"]').keypress(debounce(handleEvent, 500));
+    $('input[type="text"]').keypress(handleEvent);
 
     // $.ajax({
     //     method: 'GET',
