@@ -18,10 +18,11 @@ let handleGetContacts = (data) => {
                         <span class="title">${contact.firstName}</span>                        
                     </li>                
                 `
-        $('.data-list[data-list=contacts]').append(html)
+        // $('.data-list[data-list=contacts]').append(html)
+        $('#luiz').prepend(html)
     })
 
-    $('.circular-spinner').hide()
+    setTimeout(function(){$('.circular-spinner').hide()},500)    
 }
 
 let handleError = (err) => {
@@ -44,6 +45,8 @@ $(document).ready(() => {
                 $(this).css('background-color', 'green')
             }
         });
+    
+    // $(".paragraphs p").css({ backgroundColor: "yellow", fontSize: "200%" });
 
     $(".paragraphs p").click(function (event) {
         debugger
@@ -56,13 +59,20 @@ $(document).ready(() => {
     });
 
     $('button').click(handleEvent);
-
+    $('button').attr('title','botão simples')
     $('input[type="text"]').keypress(handleEvent);
 
-    // $.ajax({
-    //     method: 'GET',
-    //     url: `${baseUrl}/contacts`,
-    //     success: handleGetContacts,
-    //     error: handleError
-    // })
+    $("span").parents();
+    $("span").parents("ul");
+    $("span").parentsUntil("div");
+
+    $.ajax({
+        method: 'GET',
+        url: `${baseUrl}/contacts`,
+        success: handleGetContacts,
+        error: handleError
+    })
 });
+
+
+document.getElementsByClassName
